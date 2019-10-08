@@ -1,0 +1,14 @@
+N = int(input())
+K = int(input())
+L = int(input())
+A = []
+sum = 0
+k = 0
+Answer =0
+for i in range(0, N):
+    A.append(int(input()))
+for i in range(K, L+1):
+    sum += A[i]
+    k += 1
+Answer = sum/k
+print(Answer)
