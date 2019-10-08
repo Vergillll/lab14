@@ -1,0 +1,9 @@
+N = int(input())
+A = []
+k = 0
+for i in range(0, N):
+    A.append(int(input()))
+for i in range(1, N-1):
+    if A[i-1] < A[i] and A[i] > A[i+1]:
+        k = i
+print(k)
