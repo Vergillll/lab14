@@ -1,5 +1,11 @@
 N = int(input())
 A = []
 k = 0
+s = ""
 for i in range(0, N):
     A.append(int(input()))
+for i in range(0, N):
+    s = ""
+    k = A[i]
+    for j in range(0, N):
+        
