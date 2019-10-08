@@ -1,0 +1,15 @@
+N = int(input())
+A = []
+Even = []
+k = 0
+for i in range(0, N):
+    A.append(int(input()))
+for i in range(0, N):
+    if A[i] % 2 == 0:
+        Even.append(A[i])
+        k += 1
+O = Even[1]
+for i in range(0, k):
+    if O > Even[i]:
+        O = Even[i]
+        print(O)
