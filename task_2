@@ -1,0 +1,14 @@
+N = int(input())
+A = []
+for i in range(0, N):
+    A.append(int(input()))
+print(A)
+d = A[1] - A[0]
+k = 1
+for i in range(0, N-1):
+    if (A[i+1] - A[i]) == d:
+        k += 1
+if k == N:
+    print(d)
+else:
+    print(0)
